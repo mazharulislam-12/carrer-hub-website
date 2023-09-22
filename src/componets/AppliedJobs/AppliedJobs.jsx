@@ -14,7 +14,7 @@ const AppliedJobs = () => {
             for(const id of storedJobIds){
                 const job = jobs.find(job => job.id === id);
                 if (job) {
-                    jobsApplied.push(job )
+                    jobsApplied.push(job)
                 }
             }
 
