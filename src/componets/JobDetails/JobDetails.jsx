@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveJonApplication } from "../Utliti/LocalStorage";
+import { saveJobApplication } from "../Utliti/LocalStorage";
 
 const JobDetails = () => {
 
@@ -12,7 +12,7 @@ const JobDetails = () => {
     console.log(job)
 
     const handApplyJob = () =>{
-        saveJonApplication(id);
+        saveJobApplication(idInt)
         toast('You have applied successfully')
     }
 
